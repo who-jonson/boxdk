@@ -1,0 +1,70 @@
+{
+  "name": "@whoj/boxdk",
+  "description": "Typed version of [Box Clientside SDK]",
+  "version": "1.0.0-beta.1",
+  "license": "MIT",
+  "packageManager": "pnpm@7.27.0",
+  "author": {
+    "name": "Jonson B.",
+    "email": "www.jbc.bd@gmail.com",
+    "url": "https://who-jonson.github.io"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/boxdk.d.ts",
+      "import": "./dist/boxdk.mjs",
+      "require": "./dist/boxdk.cjs"
+    }
+  },
+  "main": "./dist/boxdk.cjs",
+  "module": "./dist/boxdk.mjs",
+  "types": "./dist/boxdk.d.ts",
+  "iife": "./dist/boxdk.iife.js",
+  "unpkg": "./dist/boxdk.iife.js",
+  "jsdelivr": "./dist/boxdk.iife.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/boxdk.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite --host",
+    "prepublishOnly": "tsc --noEmit && vite build && npm run build:dts",
+    "build:dts": "dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public",
+    "prepare": "husky install && husky set .husky/pre-commit 'npx lint-staged' && git add .husky/pre-commit",
+    "uninstall-husky": "npm uninstall husky --no-save && git config --unset core.hooksPath && npx rimraf .husky"
+  },
+  "dependencies": {
+    "@whoj/utils-core": "^1.5.0",
+    "rusha": "^0.8.14",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/rusha": "^0.8.0",
+    "@whoj/eslint-config": "^1.2.0",
+    "bumpp": "^8.2.1",
+    "dts-bundle-generator": "^7.1.0",
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vitest": "^0.28.4"
+  }
+}

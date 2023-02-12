@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": [
+    "@whoj"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "new-cap": "off",
+    "@typescript-eslint/no-this-alias": "off"
+  }
+}
