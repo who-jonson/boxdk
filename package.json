@@ -13,6 +13,14 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
+  "homepage": "https://github.com/who-jonson/boxdk#readme",
+  "repository": {
+    "url": "https://github.com/who-jonson/boxdk",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/who-jonson/boxdk/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/boxdk.d.ts",
