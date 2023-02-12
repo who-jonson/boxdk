@@ -4,9 +4,7 @@ import { objectKeys } from '@whoj/utils-core';
 import type { ModuleFormat } from 'rollup';
 
 const globals = {
-  'rusha': 'Rusha',
-  'ofetch': 'Ofetch',
-  '@whoj/utils-core': 'Whoj.Utils.Core'
+  rusha: 'Rusha'
 };
 
 const fileName = (format: ModuleFormat) => {
