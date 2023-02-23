@@ -3,8 +3,11 @@
 All notable changes to the "@whoj/boxdk" project will be documented in this file.
 
 
-## v1.0.0
+## v1.0.0-beta.6
 
+### 🩹 Fixes
+
+ - fix: Entry misconfiguration fixed
 
 ### 🎨 Styles
 
