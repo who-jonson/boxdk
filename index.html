@@ -5,9 +5,46 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preload" as="script" href="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js">
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/index.ts"></script>
+
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="module">
+      import { isBrowser } from 'https://cdn.jsdelivr.net/npm/@whoj/utils@1.5.0/+esm';
+
+      console.log(isBrowser);
+    </script>
+<!--    <script type="importmap-shim">-->
+<!--      {-->
+<!--        "imports": {-->
+<!--          "@whoj/boxdk": "https://ga.jspm.io/npm:@whoj/boxdk@1.0.0-beta.3/dist/boxdk.mjs"-->
+<!--        },-->
+<!--        "scopes": {-->
+<!--          "https://ga.jspm.io/npm:@whoj/boxdk@1.0.0-beta.3/": {-->
+<!--            "rusha": "https://ga.jspm.io/npm:rusha@0.8.14/dist/rusha.js",-->
+<!--            "@whoj/utils-core": "https://ga.jspm.io/npm:@whoj/utils-core@1.5.0/dist/index.mjs"-->
+<!--          }-->
+<!--        }-->
+<!--      }-->
+<!--    </script>-->
+
+<!--    <script type="module-shim">-->
+<!--      import BoxSdk from '@whoj/boxdk';-->
+
+<!--      const box = new BoxSdk();-->
+
+<!--      const accessToken = 'Y604izUCa2CqCjhycLjI9CTsjlsXZ1QJ';-->
+
+<!--      const boxClient = new box.BasicBoxClient({ accessToken });-->
+<!--      boxClient.folders.get({ id: '0', params: { fields: 'name,item_collection' } })-->
+<!--        .then((folder) => {-->
+<!--          console.log(folder);-->
+<!--        })-->
+<!--        .catch((err) => {-->
+<!--          console.log(err);-->
+<!--        });-->
+<!--    </script>-->
   </body>
 </html>

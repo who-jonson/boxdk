@@ -1,11 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { objectKeys } from '@whoj/utils-core';
 import type { ModuleFormat } from 'rollup';
-
-const globals = {
-  rusha: 'Rusha'
-};
 
 const fileName = (format: ModuleFormat) => {
   let name = 'boxdk.';
@@ -26,13 +21,6 @@ export default defineConfig(({ command }) => ({
       name: 'BoxSdk',
       formats: ['es', 'cjs', 'iife'],
       fileName
-    },
-
-    rollupOptions: {
-      external: objectKeys(globals),
-      output: {
-        globals
-      }
     },
 
     sourcemap: true
