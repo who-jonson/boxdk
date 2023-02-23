@@ -3,7 +3,7 @@ import replace from '@rollup/plugin-replace';
 import typescript from '@rollup/plugin-typescript';
 import { rollupImportMapPlugin } from 'rollup-plugin-import-map';
 
-const input = './src/index.ts';
+const input = './src/boxdk.ts';
 
 // const _external = ['@whoj/utils', 'rusha', 'whatwg-fetch'];
 

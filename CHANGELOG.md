@@ -3,6 +3,17 @@
 All notable changes to the "@whoj/boxdk" project will be documented in this file.
 
 
+## v1.0.0
+
+
+### 🎨 Styles
+
+  - Changelog added (ec5f725)
+
+### ❤️  Contributors
+
+- Jonson B ([@who-jonson](http://github.com/who-jonson))
+
 ## v1.0.0-beta.5
 
 
