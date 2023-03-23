@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/box-community/box-javascript-sdk/main/images/box-dev-logo-clip.png" alt= “box-dev-logo” style="margin-left:-10px;" width=40%;>
+
 # @whoj/boxdk
 
 Typed version of [Box Clientside SDK](https://github.com/allenmichael/box-javascript-sdk)
