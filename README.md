@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/box-community/box-javascript-sdk/main/images/box-dev-logo-clip.png" alt= “box-dev-logo” style="margin-left:-10px;" width=40%;>
+<img src="https://raw.githubusercontent.com/box-community/box-javascript-sdk/main/images/box-dev-logo-clip.png" alt= “box-dev-logo” style="margin-left:-10px;" width=90%;>
 
 # @whoj/boxdk
 
