@@ -3,6 +3,19 @@
 All notable changes to the "@whoj/boxdk" project will be documented in this file.
 
 
+## v1.0.0-beta.7
+
+[compare changes](https://github.com/who-jonson/boxdk/compare/v1.0.0-beta.6...v1.0.0-beta.7)
+
+
+### 📦 Build
+
+  - Typescript update ([134f327](https://github.com/who-jonson/boxdk/commit/134f327))
+
+### ❤️  Contributors
+
+- Jonson B ([@who-jonson](http://github.com/who-jonson))
+
 ## v1.0.0-beta.6
 
 ### 🩹 Fixes
