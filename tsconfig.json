@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "allowJs": true,
     "sourceMap": true,
-    "resolveJsonModule": true,
+    "declarationMap": true,
     "esModuleInterop": true,
     "noUnusedLocals": true,
     "skipLibCheck": true,

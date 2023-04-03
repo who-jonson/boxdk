@@ -2,6 +2,8 @@
 
 # @whoj/boxdk
 
+[![NPM version](https://img.shields.io/npm/v/@whoj/boxdk?color=a1b858&label=)](https://www.npmjs.com/package/@whoj/boxdk)
+
 Typed version of [Box Clientside SDK](https://github.com/allenmichael/box-javascript-sdk)
 
 ## Installation

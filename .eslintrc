@@ -10,6 +10,7 @@
   "rules": {
     "no-console": "off",
     "new-cap": "off",
+    "no-throw-literal": "off",
     "@typescript-eslint/no-this-alias": "off"
   }
 }

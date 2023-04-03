@@ -1,7 +1,7 @@
 import BasicBoxClient from './box-client';
 import PersistentBoxClient from './persistent-box-client';
 
-export default class Boxdk {
+export default class BoxSdk {
   private readonly _BasicBoxClient;
 
   private readonly _PersistentBoxClient;

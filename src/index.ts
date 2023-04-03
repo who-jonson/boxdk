@@ -1,6 +1,6 @@
-import Boxdk from './boxdk';
+import BoxSdk from './boxdk';
 
-const box = new Boxdk();
+const box = new BoxSdk();
 
 const accessToken = import.meta.env.VITE_BOX_APP_TOKEN;
 
